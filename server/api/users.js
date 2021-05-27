@@ -22,7 +22,7 @@ router.post('/', async (req, res) => {
 
         await newUser.save();
         return res.status(201).json({
-            message: "Created account successfully"
+            message: 'Created account successfully',
         });
     } catch (err) {
         console.log(err);
