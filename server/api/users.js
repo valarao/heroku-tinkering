@@ -16,7 +16,8 @@ router.post('/', async (req, res) => {
     try {
         const { name, email } = req.body;
         const newUser = new User({
-            name: name, email: email
+            name: name,
+            email: email,
         });
 
         await newUser.save();
