@@ -13,7 +13,6 @@ function App() {
       try {
         const users = await axios.get("/api/users");
         setUsers(users.data);
-        console.log(users);
       } catch (err) {
         console.log(err);
       }
@@ -35,7 +34,7 @@ function App() {
         name: username,
         email: email,
       });
-     
+
       alert("Account created successfully");
       window.location.reload();
     } catch (err) {
