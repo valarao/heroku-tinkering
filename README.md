@@ -85,8 +85,15 @@ heroku create <app-name>
 git push heroku HEAD:master
 ```
 
-On the Heroku console, we can <b>specify environment variables</b> as `Config Vars` in the settings page.
+On the Heroku console, <b>add a pipeline</b> to enable CI/CD with staging and production
 
-Then, <b>add a pipeline</b> to enable CI/CD with staging and production.
+![image](https://user-images.githubusercontent.com/25139382/119913668-5538c600-bf13-11eb-85e0-32c556589d87.png)
 
-Lastly, <b>enable review apps</b> for CI/CD on pull requests linked to a GitHub repo.
+
+Then, <b>enable review apps</b> for CI/CD on pull requests linked to a GitHub repo
+
+![image](https://user-images.githubusercontent.com/25139382/119913698-6aadf000-bf13-11eb-9f20-c373615f6279.png)
+
+Lastly, we can <b>specify environment variables</b> as `Config Vars` in the settings page (Staging, production, and review apps all need `Config Vars` setup)
+
+![image](https://user-images.githubusercontent.com/25139382/119913754-8f09cc80-bf13-11eb-9d28-45d6b6ea3af8.png)
