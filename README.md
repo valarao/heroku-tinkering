@@ -96,3 +96,9 @@ Then, <b>enable review apps</b> for CI/CD on pull requests linked to a GitHub re
 Lastly, we can <b>specify environment variables</b> as `Config Vars` in the settings page (Staging, production, and review apps all need `Config Vars` setup)
 
 ![image](https://user-images.githubusercontent.com/25139382/119913754-8f09cc80-bf13-11eb-9d28-45d6b6ea3af8.png)
+
+## Pipeline Deployments
+
+- Pull Request: https://heroku-tinke-exhibition-yk7val.herokuapp.com/
+- Staging: https://heroku-tinkering-staging.herokuapp.com/
+- Production: https://heroku-tinkering.herokuapp.com/
