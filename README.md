@@ -4,16 +4,24 @@ Barebones boilerplate setup for a MERN application linked to a CI/CD pipeline on
 
 ## File Structure
 
-+-- client<br/>
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-- default.html<br/>
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-- post.html<br/>
+<b>+-- client<br/>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-- public<br/>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-- src<br/></b>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-- build (gitignored)<br/>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-- node_modules (gitignored)<br/>
+<b>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-- .gitignore (client)<br/>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-- package.json (client)<br/>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-- yarn.lock (client)<br/>
 +-- server<br/>
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-- 2007-10-29-why-every-programmer-should-play-nethack.textile<br/>
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-- 2009-04-26-barcamp-boston-4-roundup.textile<br/>
-+-- .env (must be added manually, but not committed)<br/>
-+-- .gitignore<br/>
-+-- package.json (for server dependencies, but has script for deployment)<br/>
-+-- yarn.lock<br/>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-- api<br/>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-- models<br/>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-- database.js<br/>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-- index.js<br/></b>
++-- node_modules (gitignored)<br/>
++-- .env (gitignored - must add variables to use)<br/>
+<b>+-- .gitignore (server)<br/>
++-- package.json (server + deployment)<br/>
++-- yarn.lock (server)<br/></b>
 
 ## Client
 
