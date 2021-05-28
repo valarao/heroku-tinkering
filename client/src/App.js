@@ -5,13 +5,13 @@ import axios from 'axios';
 
 function App() {
   const [users, setUsers] = useState(null);
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
 
   useEffect(() => {
     const getUsers = async () => {
       try {
-        const users = await axios.get("/api/users");
+        const users = await axios.get('/api/users');
         setUsers(users.data);
       } catch (err) {
         console.log(err);
@@ -21,24 +21,24 @@ function App() {
   }, []);
 
   const submitForm = async () => {
-    if (username === "") {
-      alert("Please fill the username field");
+    if (username === '') {
+      alert('Please fill the username field');
       return;
     }
-    if (email === "") {
-      alert("Please fill the email field");
+    if (email === '') {
+      alert('Please fill the email field');
       return;
     }
     try {
-      await axios.post("/api/users", {
+      await axios.post('/api/users', {
         name: username,
         email: email,
       });
 
-      alert("Account created successfully");
+      alert('Account created successfully');
       window.location.reload();
     } catch (err) {
-      alert("Could not create account. Please try again");
+      alert('Could not create account. Please try again');
     }
   }
 
@@ -66,15 +66,15 @@ function App() {
       <form>
         <input
           onChange={(e) => setUsername(e.target.value)}
-          type="text"
-          placeholder="Enter your username"
+          type='text'
+          placeholder='Enter your username'
         />
         <input
           onChange={(e) => setEmail(e.target.value)}
-          type="text"
-          placeholder="Enter your email address"
+          type='text'
+          placeholder='Enter your email address'
         />
-        <input type="button" value='Submit' onClick={submitForm} />
+        <input type='button' value='Submit' onClick={submitForm} />
       </form>
     </>
   );
