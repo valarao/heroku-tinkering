@@ -8,6 +8,7 @@ require('dotenv').config();
 const users = require('./api/users');
 const initializeConnection = require('./database');
 
+// ---- CONNECT DATABASE ----
 initializeConnection();
 
 // ---- MIDDLEWARE ----
@@ -26,6 +27,7 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/build'));
 })
 
+// ---- START SERVER ----
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
     console.log(`Server started on port ${port}`);
